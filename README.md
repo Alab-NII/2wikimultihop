@@ -6,7 +6,7 @@ This is the repository for the paper: Constructing A Multi-hop QA Dataset for Co
 ### Leaderboard
 
 
-| Date | Model| Ans <br> EM | Ans <br> F1 | Sup <br> FM | Sup <br> F1 | Evi <br> EM | Evi <br> F1 | Joint <br> EM | Joint <br> F1 |
+| Date | Model| Ans <br> EM | Ans <br> F1 | Sup <br> EM | Sup <br> F1 | Evi <br> EM | Evi <br> F1 | Joint <br> EM | Joint <br> F1 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Oct 25 | Baseline model | 36.53 | 43.93 | 24.99 | 65.26 | 1.07 | 14.94 | 0.35 | 5.41 |
 
