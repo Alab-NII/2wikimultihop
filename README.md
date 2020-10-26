@@ -22,7 +22,8 @@ Please prepare the following information:
 
 
 ### Dataset Contents
-The full dataset is in [here](https://www.dropbox.com/s/cdg60ieobovwc7x/data.zip)
+The full dataset is in [here](https://www.dropbox.com/s/cdg60ieobovwc7x/data.zip).
+
 Our dataset follows the format of HotpotQA.
 Each sample has the following keys:
 - ```_id```: a unique id for each sample
