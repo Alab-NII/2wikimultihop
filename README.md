@@ -86,3 +86,8 @@ If you plan to use the dataset, please cite our paper:
     year={2020}
 }
 ```
+
+
+### References
+The baseline model and the evaluation script are adapted from https://github.com/hotpotqa/hotpot
+
