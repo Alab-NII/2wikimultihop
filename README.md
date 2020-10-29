@@ -3,21 +3,23 @@
 This is the repository for the paper: Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps (COLING 2020).
 
 
-### Leaderboard
-
+### Leaderboard 
 
 | Date | Model| Ans <br> EM | Ans <br> F1 | Sup <br> EM | Sup <br> F1 | Evi <br> EM | Evi <br> F1 | Joint <br> EM | Joint <br> F1 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Oct 25 | Baseline model | 36.53 | 43.93 | 24.99 | 65.26 | 1.07 | 14.94 | 0.35 | 5.41 |
 
 
-To evaluate the test data, please contact us (We will build the server for evaluation in the future).
+### Submission guide
+
+To evaluate your model on the test data, please contact us (We will build the server for evaluation in the future).
 Please prepare the following information: 
 
 
-1. Your prediction file (follow format in file: ```prediction_format.json```)
-2. Public repository of your model (optional)
-3. Reference to your publication (optional)
+1. Your prediction file (follow format in file: [prediction_format.json](https://github.com/Alab-NII/2wikimultihop/blob/main/prediction_format.json))
+2. The name of your model
+3. Public repository of your model (optional)
+4. Reference to your publication (optional)
 
 
 
@@ -77,7 +79,7 @@ If you plan to use the dataset, please cite our paper:
 
 ```
 @inproceedings{xanh2020_2wikimultihop,
-    title={ {Constructing {A} {M}ulti-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
+    title={ {C}onstructing {A} {M}ulti-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
     author={Xanh Ho and
         Anh-Khoa Duong Nguyen and
         Saku Sugawara and
