@@ -65,9 +65,18 @@ def update_answer(metrics, prediction, gold):
     return em, prec, recall
 
 
+def normalize_sp(sps):
+    new_sps = []
+    for sp in sps:
+        sp = list(sp)
+        sp[0] = sp[0].lower()
+        new_sps.append(sp)
+    return new_sps
+
+
 def update_sp(metrics, prediction, gold):
-    cur_sp_pred = set(map(tuple, prediction))
-    gold_sp_pred = set(map(tuple, gold))
+    cur_sp_pred = normalize_sp(set(map(tuple, prediction)))
+    gold_sp_pred = normalize_sp(set(map(tuple, gold)))
     tp, fp, fn = 0, 0, 0
     for e in cur_sp_pred:
         if e in gold_sp_pred:
@@ -88,7 +97,7 @@ def update_sp(metrics, prediction, gold):
     return em, prec, recall
 
 
-def normalize_evi(evidences, only_relation=True):
+def normalize_evi(evidences):
 
     def white_space_fix(text):
         return ' '.join(text.split())
@@ -99,16 +108,10 @@ def normalize_evi(evidences, only_relation=True):
 
     def lower(text):
         return text.lower()
-
     
-    if only_relation == True:
-        for idx_1 in range(len(evidences)):
-            evidences[idx_1] = white_space_fix((remove_punc(lower(evidences[idx_1][1]))))
-    # 
-    else:
-        for idx_1 in range(len(evidences)):
-            for idx_2 in range(len(evidences[idx_1])):
-                evidences[idx_1][idx_2] = white_space_fix((remove_punc(lower(evidences[idx_1][idx_2]))))
+    for idx_1 in range(len(evidences)):
+        for idx_2 in range(len(evidences[idx_1])):
+            evidences[idx_1][idx_2] = white_space_fix((remove_punc(lower(evidences[idx_1][idx_2]))))
     return evidences
 
 
@@ -191,7 +194,7 @@ def eval(prediction_file, gold_file):
 
     N = len(gold)
     for k in metrics.keys():
-        metrics[k] /= N
+        metrics[k] = round(metrics[k]/N*100, 2)
 
     print(json.dumps(metrics, indent=4))
 
