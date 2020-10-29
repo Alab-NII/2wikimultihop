@@ -1,6 +1,6 @@
 #!/bin/sh
 # Download 2WikiMultihop Data
-wget ...
+wget https://www.dropbox.com/s/npidmtadreo6df2/data.zip
 
 
 # Download GloVe

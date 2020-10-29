@@ -15,24 +15,23 @@ To evaluate the test data, please contact us (We will build the server for evalu
 Please prepare the following information: 
 
 
-1. Your prediction file 
+1. Your prediction file (follow format in file: ```prediction_format.json```)
 2. Public repository of your model (optional)
 3. Reference to your publication (optional)
 
 
 
 ### Dataset Contents
-The full dataset is in [here](https://www.dropbox.com/s/cdg60ieobovwc7x/data.zip).
+The full dataset is in [here](https://www.dropbox.com/s/npidmtadreo6df2/data.zip).
 
 Our dataset follows the format of HotpotQA.
 Each sample has the following keys:
 - ```_id```: a unique id for each sample
 - ```question```: a string
 - ```answer```: an answer to the question. The test data does not have this information.
-- ```supporting_facts```: a list, each element is another list that contains: ```[title, sent_id]```, ```title``` is the title of the paragraph, ```sent_id``` is the sentence index (start from 0) of the sentence that the model uses. The test data does not have this information.
-- ```context```: a list, each element is another list that contains ```[title, setences]```, ```sentences``` is a list of sentences.
+- ```supporting_facts```: a list, each element is a list that contains: ```[title, sent_id]```, ```title``` is the title of the paragraph, ```sent_id``` is the sentence index (start from 0) of the sentence that the model uses. The test data does not have this information.
+- ```context```: a list, each element is a list that contains ```[title, setences]```, ```sentences``` is a list of sentences.
 - ```evidences```: a list, each element is a triple that contains ```[subject entity, relation, object entity]```. The test data does not have this information.
-- ```original_triples```: similar to ```evidences```, the difference is the triples are obtained from Wikidata. For instance, the triple in ```evidences``` is ```(Person A, country of citizenship, American)```, but the triple in original_triples is ```(Person A, country of citizenship, United States of America)```. ```American``` is a text span appears in the Wikipedia's article. The test data does not have this information.
 - ```type```: a string, there are four types of questions in our dataset: comparison, inference, compositional, and bridge-comparison.
 
 
