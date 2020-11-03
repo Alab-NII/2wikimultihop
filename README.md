@@ -1,6 +1,6 @@
 # 2WikiMultihopQA: A Dataset for Comprehensive Evaluation of Reasoning Steps
 
-This is the repository for the paper: Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps (COLING 2020).
+This is the repository for the paper: [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://arxiv.org/abs/2011.01060) (COLING 2020).
 
 
 ### Leaderboard 
