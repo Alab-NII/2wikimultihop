@@ -79,13 +79,18 @@ If you plan to use the dataset, please cite our paper:
 
 ```
 @inproceedings{xanh2020_2wikimultihop,
-    title={ {C}onstructing {A} {M}ulti-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
-    author={Xanh Ho and
-        Anh-Khoa Duong Nguyen and
-        Saku Sugawara and
-        Akiko Aizawa},
-    booktitle={{COLING}},
-    year={2020}
+    title = "Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps",
+    author = "Ho, Xanh  and
+      Duong Nguyen, Anh-Khoa  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.580",
+    pages = "6609--6625",
 }
 ```
 
