@@ -1,6 +1,15 @@
 # 2WikiMultihopQA: A Dataset for Comprehensive Evaluation of Reasoning Steps
 
-This is the repository for the paper: [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://arxiv.org/abs/2011.01060) (COLING 2020).
+This is the repository for the paper: [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://www.aclweb.org/anthology/2020.coling-main.580/) (COLING 2020).
+
+
+### New Update (December 8, 2020)
+- Due to the multiple names of an entity in Wikidata, we add ```evidences_id``` and ```answer_id``` to our dataset. Here are the details:
+  * For Inference and Compositional questions: we add to all questions.
+  * For Comparison and Bridge_comparison questions: we add to questions that have relations: ```country```, ```country of origin```, and ```country of citizenship```.
+- We update the new evaluation script [2wikimultihop_evaluation_v1.1.py](). We can use this evaluation script to evaluate the dataset with ```evidences_id``` and ```answer_id```.
+- We also update the results of the baseline model by using the new evaluation script and the dataset with ```evidences_id``` and ```answer_id```. The updated results of tables 5, 6, and 7 in the paper are in the folder update_results.
+- [Here](https://www.dropbox.com/s/9fwhnzektzv4wh5/data_ids.zip?dl=0) is the link of the dataset with ```evidences_id``` and ```answer_id```.  File ```id_aliases.json``` is used for evaluation.
 
 
 ### Leaderboard 
@@ -8,11 +17,13 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
 | Date | Model| Ans <br> EM | Ans <br> F1 | Sup <br> EM | Sup <br> F1 | Evi <br> EM | Evi <br> F1 | Joint <br> EM | Joint <br> F1 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Oct 25 | Baseline model | 36.53 | 43.93 | 24.99 | 65.26 | 1.07 | 14.94 | 0.35 | 5.41 |
+| Dec 08 | Baseline model (use new evaluation script) | 40.08 | 46.29 | 24.99 | 65.26 | 1.49 | 16.63 | 0.53 | 6.51 |
+
 
 
 ### Submission guide
 
-To evaluate your model on the test data, please contact us (We will build the server for evaluation in the future).
+To evaluate your model on the test data, please contact us.
 Please prepare the following information: 
 
 
