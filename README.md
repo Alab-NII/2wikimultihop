@@ -8,7 +8,7 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
   * For Inference and Compositional questions: we add to all questions.
   * For Comparison and Bridge_comparison questions: we add to questions that have relations: ```country```, ```country of origin```, and ```country of citizenship```.
 - We update the new evaluation script [2wikimultihop_evaluation_v1.1.py](https://github.com/Alab-NII/2wikimultihop/blob/main/2wikimultihop_evaluate_v1.1.py). We can use this evaluation script to evaluate the dataset with ```evidences_id``` and ```answer_id```.
-- We also update the results of the baseline model by using the new evaluation script and the dataset with ```evidences_id``` and ```answer_id```. The updated results of tables 5, 6, and 7 in the paper are in the folder update_results.
+- We also update the results of the baseline model by using the new evaluation script and the dataset with ```evidences_id``` and ```answer_id```. The updated results of tables 5, 6, and 7 in the paper are in the folder [update_results](https://github.com/Alab-NII/2wikimultihop/tree/main/update_results).
 - [Here](https://www.dropbox.com/s/9fwhnzektzv4wh5/data_ids.zip?dl=0) is the link of the dataset with ```evidences_id``` and ```answer_id```.  File ```id_aliases.json``` is used for evaluation.
 
 
@@ -79,9 +79,14 @@ python3 main.py --mode test --data_split dev --para_limit 2250 --batch_size 24 -
 ```
 
 ```
-python3 2wikimultihop_evaluate.py predictions/wikimultihop_dev_pred.json wikimultihop/dev.json
+python3 2wikimultihop_evaluate.py predictions/wikimultihop_dev_pred.json data/dev.json
 ```
 
+- Using new evaluation script
+
+```
+python3 2wikimultihop_evaluate_v1.1.py predictions/wikimultihop_dev_pred.json data_ids/dev.json id_aliases.json
+```
 
 
 
