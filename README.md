@@ -82,7 +82,7 @@ python3 main.py --mode test --data_split dev --para_limit 2250 --batch_size 24 -
 python3 2wikimultihop_evaluate.py predictions/wikimultihop_dev_pred.json data/dev.json
 ```
 
-- Using new evaluation script
+- Use new evaluation script
 
 ```
 python3 2wikimultihop_evaluate_v1.1.py predictions/wikimultihop_dev_pred.json data_ids/dev.json id_aliases.json
