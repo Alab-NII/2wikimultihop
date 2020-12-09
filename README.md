@@ -9,7 +9,7 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
   * For Comparison and Bridge_comparison questions: we add to questions that have relations: ```country```, ```country of origin```, and ```country of citizenship```.
 - We update the new evaluation script [2wikimultihop_evaluation_v1.1.py](https://github.com/Alab-NII/2wikimultihop/blob/main/2wikimultihop_evaluate_v1.1.py). We can use this evaluation script to evaluate the dataset with ```evidences_id``` and ```answer_id```.
 - We also update the results of the baseline model by using the new evaluation script and the dataset with ```evidences_id``` and ```answer_id```. The updated results of tables 5, 6, and 7 in the paper are in the folder [update_results](https://github.com/Alab-NII/2wikimultihop/tree/main/update_results).
-- [Here](https://www.dropbox.com/s/9fwhnzektzv4wh5/data_ids.zip?dl=0) is the link of the dataset with ```evidences_id``` and ```answer_id```.  File ```id_aliases.json``` is used for evaluation.
+- [Here](https://www.dropbox.com/s/7ep3h8unu2njfxv/data_ids.zip?dl=0) is the link of the dataset with ```evidences_id``` and ```answer_id```.  File ```id_aliases.json``` is used for evaluation.
 
 
 ### Leaderboard 
@@ -46,6 +46,7 @@ Each sample has the following keys:
 - ```context```: a list, each element is a list that contains ```[title, setences]```, ```sentences``` is a list of sentences.
 - ```evidences```: a list, each element is a triple that contains ```[subject entity, relation, object entity]```. The test data does not have this information.
 - ```type```: a string, there are four types of questions in our dataset: comparison, inference, compositional, and bridge-comparison.
+- ```entity_ids```: a string that contains the two Wikidata ids (four for bridge_comparison question) of the gold paragraphs, e.g., 'Q7320430_Q51759'.
 
 
 
