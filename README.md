@@ -5,15 +5,15 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
 
 
 ### New Update (April 7, 2021)
-- We release the [para_with_hyperlink.zip](https://www.dropbox.com/s/wlhw26kik59wbh8/para_with_hyperlink.zip) file that contains all articles/paragraphs with hyperlink information in the English Wikipedia dump on January 1, 2020 (except for some error paragraphs). Each paragraph has the following information:
-  * "id": Wikipedia id of an article
-  * "title"
-  * "sentences": a list of sentence
-  * "mentions": a list of hyperlink information, each element has the following information: ```id```, ```start```, ```end```, ```ref_url```, ```ref_ids```, ```sent_idx```. 
+- We release the [para_with_hyperlink.zip](https://www.dropbox.com/s/wlhw26kik59wbh8/para_with_hyperlink.zip) file that contains all articles/paragraphs with hyperlink information (except for some error paragraphs). Each paragraph has the following information:
+  * ```id```: Wikipedia id of an article
+  * ```title```
+  * ```sentences```: a list of sentence
+  * ```mentions```: a list of hyperlink information, each element has the following information: ```id```, ```start```, ```end```, ```ref_url```, ```ref_ids```, ```sent_idx```. 
 - [Here](https://www.dropbox.com/s/ms2m13252h6xubs/data_ids_april7.zip) is the link of the dataset that has fixed the inconsistency of sentence segmentation in paragraphs. 
  
 
-### New Update (December 8, 2020)
+### Update on December 8, 2020
 - Due to the multiple names of an entity in Wikidata, we add ```evidences_id``` and ```answer_id``` to our dataset. Here are the details:
   * For Inference and Compositional questions: we add to all questions.
   * For Comparison and Bridge_comparison questions: we add to questions that have relations: ```country```, ```country of origin```, and ```country of citizenship```.
