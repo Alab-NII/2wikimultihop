@@ -28,6 +28,7 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Oct 29, 2021 | [NA-Reviewer](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.12411) | 76.73 |  81.91 |  89.61 |  94.31 | 53.66 | 70.83 |  52.75 | 65.23 |
 | Oct 26, 2021 | [CRERC](https://arxiv.org/abs/2110.13472) | 69.58 |  72.33 |  82.86 |  90.68 | 54.86 | 68.83 |  49.80 | 58.99 |
+| June, 2022 | [BigBird-base model](https://arxiv.org/pdf/2302.05963) | 74.05 |  79.68 | 77.14  | 92.13  | 45.75 | 76.64 |  39.30 | 63.24 |
 | Jan 12, 2022 | BigBird-base model - Weighted (Anonymous) | 73.04 |  78.90 |  76.92 |  91.95 | 45.05 | 76.13 |  38.72 | 62.33 |
 | Jan 12, 2022 | BigBird-base model - Unweighted (Anonymous) | 72.38 |  77.98 |  75.68 |  91.56 | 35.07 | 71.09 |  29.86 | 57.74 |
 | June 14, 2021 | BigBird-base model (Anonymous) | 71.42 |  77.64 |  73.84 |  90.68 | 24.64 | 63.69 |  21.37 | 51.44 |
