@@ -34,6 +34,7 @@ This is the repository for the paper: [Constructing A Multi-hop QA Dataset for C
 | June 14, 2021 | BigBird-base model (Anonymous) | 71.42 |  77.64 |  73.84 |  90.68 | 24.64 | 63.69 |  21.37 | 51.44 |
 | Dec 11, 2021 |RoBERTa-base (Anonymous)  | 32.24 | 40.90 | 40.91 | 71.85 | 13.80 | 41.37 | 6.92 |  20.54 |
 | Oct 25, 2020 | [Baseline model](https://www.aclweb.org/anthology/2020.coling-main.580.pdf) | 36.53 | 43.93 | 24.99 | 65.26 | 1.07 | 14.94 | 0.35 | 5.41 |
+| Aug 2, 2023 | [Beam Retrieval](https://arxiv.org/abs/2308.08973) | 88.47 |  90.87 |   95.87 |  98.15 | x | x |  x | x |
 | July 30, 2021 | HGN-revise model (Anonymous) | 71.20 |  75.69 |  69.35 |  89.07 | x | x |  x | x |
   
 
